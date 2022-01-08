@@ -1,0 +1,9 @@
+@import "./variables";
+
+.app {
+  max-width: $app-width;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: $b-page;
+  color: $t-page;
+}
