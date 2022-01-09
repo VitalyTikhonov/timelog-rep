@@ -3,3 +3,8 @@
 .home-page {
   padding: $padding-outer-sides;
 }
+
+.home-page__upper-row {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,21 +1,75 @@
-// .curr-op {
+@import "../../variables";
 
-// }
+.current {
+  width: 1000px;
+  margin-right: $padding-outer-sides;
+}
 
-.curr-op__headline {
-  margin: 0;
+.current__headline {
+  margin: 0 0 10px;
   font-size: 24px;
   line-height: 28px;
 }
 
-.curr-op__body {
+.current__form {
+  display: flex;
+  flex-direction: row;
+}
+
+.current__form-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-right: $padding-outer-sides;
+}
+
+.current__form-controls {
   display: flex;
   flex-direction: column;
 }
 
-.curr-op__field-row {
+.current__item {
+  width: 100%;
+  margin: 0 0 7px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.current__field-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   /* unstyling the fieldset */
   border: none;
-  margin: 0;
+  // margin: 0; // see current__item
   padding: 0;
+}
+
+.current__field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.current__field_row-member {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.current__row-single-member-input {
+  flex-grow: 1;
+}
+
+.current__label {
+  min-width: 80px;
+  margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
